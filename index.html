@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>login - css</title>
+  </head>
+  <body>
+    <div class="container">
+      <span></span>
+      <span></span>
+      <span></span>
+      <form id="signiForm">
+        <h2>login</h2>
+        <div class="inputBox">
+          <input type="text" placeholder="Usuario" required />
+        </div>
+        <div class="inputBox">
+          <input type="password" placeholder="password" required />
+        </div>
+        <div class="inputBox grup">
+          <a href="#">Forgot Password</a>
+          <a href="#" id="signup">Singup</a>
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="sing in" />
+        </div>
+      </form>
+      <!-- register form -->
+      <form id="signupForm">
+        <h2>login</h2>
+        <div class="inputBox">
+          <input type="text" placeholder="Usuario" required />
+        </div>
+        <div class="inputBox">
+          <input type="text" placeholder="Email" required />
+        </div>
+        <div class="inputBox">
+          <input type="password" placeholder="Create password" required />
+        </div>
+        <div class="inputBox">
+          <input type="password" placeholder="Confirm password" required />
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="register account" />
+        </div>
+        <div class="inputBox grup">
+          <a href="#"> Already Have an Account ? <b id="signin">Login</b></a>
+        </div>
+      </form>
+    </div>
+    <script>
+      let singup = document.querySelector("#signup");
+      let singin = document.querySelector("#signin");
+      let body = document.querySelector("body");
+      singup.onclick = function () {
+        body.classList.add("singup");
+      };
+      singin.onclick = function () {
+        body.classList.remove("singup");
+      };
+    </script>
+  </body>
+</html>
